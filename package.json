@@ -13,12 +13,7 @@
    ],
    "main": "./dist/extension.js",
    "contributes": {
-      "commands": [
-         {
-            "command": "AbbrExt.helloWorld",
-            "title": "Hello World"
-         }
-      ]
+      "commands": []
    },
    "scripts": {
       "vscode:prepublish": "npm run package",
