@@ -1,6 +1,7 @@
 import { window } from 'vscode';
 
 import abbrs from './abbrs';
+import { word } from './decorations';
 
 export async function activate(context: ExtensionContext) {
    const abbrVals = await abbrs();
