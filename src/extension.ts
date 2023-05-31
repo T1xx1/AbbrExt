@@ -1,8 +1,6 @@
-import * as vscode from 'vscode';
 import { window } from 'vscode';
 
 import abbrs from './abbrs';
-import debounce from './lib/debounce';
 
 export async function activate(context: ExtensionContext) {
    const abbrVals = await abbrs();
@@ -24,7 +22,7 @@ export async function activate(context: ExtensionContext) {
    workspace.onDidChangeTextDocument(event => {
       if (!activeEditor) return;
 
-      if (activeEditor.document === event.document) debounce(decorate);
+      if (activeEditor.document === event.document) decorate();
    }, null, context.subscriptions);
 }
 
