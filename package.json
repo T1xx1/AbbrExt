@@ -2,6 +2,8 @@
    "name": "abbrext",
    "displayName": "AbbrExt",
    "version": "0.0.1",
+   "publisher": "T1xx1",
+   "repository": "https://github.com/T1xx1/AbbrExt",
    "engines": {
       "vscode": "^1.78.0"
    },
