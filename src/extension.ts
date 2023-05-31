@@ -8,6 +8,10 @@ export async function activate(context: ExtensionContext) {
 
    let activeEditor = window.activeTextEditor;
 
+   let decorate = () => {
+      if (!activeEditor) return;
+
+      const document = activeEditor.document;
 
    // Init call
    decorate();
