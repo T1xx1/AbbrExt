@@ -3,7 +3,7 @@ import { ExtensionContext, Range, window, workspace } from 'vscode';
 import abbrs from './abbrs';
 import { word } from './decorations';
 
-export async function activate(context: ExtensionContext) {
+export async function activate(ctx: ExtensionContext) {
    const abbrVals = await abbrs();
 
    let activeEditor = window.activeTextEditor;
@@ -13,7 +13,7 @@ export async function activate(context: ExtensionContext) {
 
       const document = activeEditor.document;
 
-      let ranges = [];
+      let rngs = [];
 
       let words = abbrVals.map(abbr => abbr.word);
       let regex = new RegExp(`\\b\w*${words.join('|')}\w*\\b`, 'gi');
@@ -23,10 +23,10 @@ export async function activate(context: ExtensionContext) {
          let startPos = document.positionAt(match.index as number);
          let endPos = document.positionAt(match.index as number + match[0].length);
 
-         ranges.push(new Range(startPos, endPos));
+         rngs.push(new Range(startPos, endPos));
       }
 
-      activeEditor.setDecorations(word, ranges);
+      activeEditor.setDecorations(word, rngs);
    };
 
    // Init call
@@ -37,14 +37,14 @@ export async function activate(context: ExtensionContext) {
       activeEditor = editor;
 
       decorate();
-   }, null, context.subscriptions);
+   }, null, ctx.subscriptions);
 
    // Update when curr editor text changes
    workspace.onDidChangeTextDocument(event => {
       if (!activeEditor) return;
 
       if (activeEditor.document === event.document) decorate();
-   }, null, context.subscriptions);
+   }, null, ctx.subscriptions);
 }
 
 export function deactivate() { }

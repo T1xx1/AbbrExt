@@ -9,6 +9,6 @@ export type Abbr = {
    word: string;
 };
 
-const origin = 'https://raw.githubusercontent.com/abbrcode/db/main/abbrs/.json';
+const orig = 'https://raw.githubusercontent.com/abbrcode/db/main/abbrs/.json';
 
-export default async () => await fetch(origin) as Abbr[];
+export default async () => await fetch(orig) as Abbr[];
