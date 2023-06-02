@@ -1,6 +1,7 @@
 {
    "name": "abbrext",
    "displayName": "AbbrExt",
+   "description": "Abbreviations in your code",
    "version": "0.0.2",
    "publisher": "T1xx1",
    "repository": "https://github.com/T1xx1/AbbrExt",
