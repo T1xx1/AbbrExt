@@ -1,11 +1,9 @@
 import { ExtensionContext, Range, TextEditorDecorationType, window, workspace } from 'vscode';
 
-import abbrs from './abbrs';
+import { words } from './datasets';
 import { word as wordDecoration } from './decorations';
 
 export async function activate(ctx: ExtensionContext) {
-   const abbrVals = await abbrs();
-
    let activeEditor = window.activeTextEditor;
 
    let decorate = (decoration: TextEditorDecorationType, words: string[]) => {
@@ -29,8 +27,6 @@ export async function activate(ctx: ExtensionContext) {
    };
 
    let style = () => {
-      let words = abbrVals.map(obj => obj.word);
-
       decorate(wordDecoration, words);
    };
 
