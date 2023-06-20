@@ -13,14 +13,16 @@ export async function activate(ctx: ExtensionContext) {
 
       let rngs = [];
 
-      let regex = new RegExp(`\\b\w*${words.join('|')}\w*\\b`, 'gi');
-      let matches = [...document.getText().matchAll(regex)];
+      for (let word of words) {
+         let regex = new RegExp(`\\b${word}\\b|\\w${word[0].toUpperCase() + word.slice(1)}(\\b|[A-Z])`, 'g');
+         let matches = [...document.getText().matchAll(regex)];
 
-      for (let match of matches) {
-         let startPos = document.positionAt(match.index as number);
-         let endPos = document.positionAt(match.index as number + match[0].length);
+         for (let match of matches) {
+            let startPos = document.positionAt(match.index as number);
+            let endPos = document.positionAt(match.index as number + match[0].length);
 
-         rngs.push(new Range(startPos, endPos));
+            rngs.push(new Range(startPos, endPos));
+         }
       }
 
       activeEditor.setDecorations(decoration, rngs);
