@@ -8,6 +8,6 @@
 
 ## Features
 
-- Underline on words that can be abbreviated
+- Underline words that can be abbreviated
 
 [Changelog](https://github.com/T1xx1/AbbrExt/blob/main/CHANGELOG.md)
