@@ -5,5 +5,5 @@ export const word = window.createTextEditorDecorationType({
 });
 
 /* export const abbr = window.createTextEditorDecorationType({
-   textDecoration: 'underline dotted #00ff00'
+   textDecoration: 'underline dotted #008000'
 }); */
