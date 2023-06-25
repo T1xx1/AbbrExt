@@ -10,7 +10,7 @@ Highlight abbreviations in your code
 
 <br />
 
-![](https://raw.githubusercontent.com/T1xx1/AbbrExt/main/img/screenshoot.png)
+![](https://raw.githubusercontent.com/T1xx1/AbbrExt/main/img/matches.png)
 
 ## Features
 
