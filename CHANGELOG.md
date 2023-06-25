@@ -3,9 +3,8 @@
 ## 0.0.2
 
 ### Changed
-- Better word matches
-   - No match if word is in another one
-   - Match with camel case
+- No match if word is in another one
+- Match word with camel case notation
 
 ## 0.0.1
 
