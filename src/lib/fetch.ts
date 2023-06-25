@@ -5,7 +5,7 @@ export default async (url: string) => {
       https.get(url, res => {
          let data = '';
 
-         res.on('data', chunk => data += chunk);
+         res.on('data', bytes => data += bytes);
          res.on('end', () => resolve(JSON.parse(data)));
       }).on('error', err => reject(err));
    });
