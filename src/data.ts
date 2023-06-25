@@ -14,18 +14,17 @@ type Abbr = {
 
 let abbrsJson = await fetch(abbrRemote) as Abbr[];
 
-export const words = abbrsJson.map(obj => obj.word)
-
-/* export const words = abbrsJson.filter(obj => {
-   let hasRecommendation = false;
+export const words = abbrsJson.filter(obj => {
+   let isRecommended = false;
 
    for (let abbr of obj.abbrs) {
-      if (abbr.degree === 'green') hasRecommendation = true;
+      if (abbr.degree === 'green') isRecommended = true;
    }
 
-   if (hasRecommendation) return obj.word;
+   if (isRecommended) return obj.word;
 }).map(obj => obj.word);
 
+/*
 export const abbrs = abbrsJson.filter(obj => {
    for (let abbrObj of obj.abbrs) {
       if (abbrObj.degree === 'green') return abbrObj.abbr;
@@ -34,4 +33,5 @@ export const abbrs = abbrsJson.filter(obj => {
    for (let abbrObj of obj.abbrs) {
       if (abbrObj.degree === 'green') return abbrObj.abbr;
    }
-}); */
+});
+*/
