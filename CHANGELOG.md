@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.2
+## [0.0.2](https://github.com/T1xx1/AbbrExt/releases/tag/v0.0.2)
 
 ### Changed
 - No match if word is in another one
