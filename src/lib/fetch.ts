@@ -1,12 +1,12 @@
 import * as https from 'https';
 
-export default async (url: string) => {
-   return new Promise((resolve, reject) => {
-      https.get(url, res => {
+export default (url: string) => {
+   return new Promise((res, reject) => {
+      https.get(url, cb => {
          let data = '';
 
-         res.on('data', bytes => data += bytes);
-         res.on('end', () => resolve(JSON.parse(data)));
+         cb.on('data', bytes => data += bytes);
+         cb.on('end', () => res(JSON.parse(data)));
       }).on('error', err => reject(err));
    });
 };
