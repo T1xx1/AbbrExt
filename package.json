@@ -5,12 +5,6 @@
    "version": "0.0.3",
    "publisher": "T1xx1",
    "repository": "https://github.com/T1xx1/AbbrExt",
-   "categories": [
-      "Other"
-   ],
-   "contributes": {
-      "commands": []
-   },
    "main": "./dist/extension.js",
    "activationEvents": [
       "onStartupFinished"
