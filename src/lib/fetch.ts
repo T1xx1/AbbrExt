@@ -1,7 +1,7 @@
 import * as https from 'https';
 
-export default (url: string) => {
-   return new Promise((res, reject) => {
+export default <T>(url: string) => {
+   return new Promise<T>((res, reject) => {
       https.get(url, cb => {
          let data = '';
 

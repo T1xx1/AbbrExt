@@ -1,20 +1,13 @@
-import fetch from './lib/fetch';
+import type { Abbr } from '../types/abbr';
 
-const abbrRemote = 'https://raw.githubusercontent.com/abbrcode/db/main/abbrs/.json';
+import fetch from '../lib/fetch';
 
-type Abbr = {
-   abbrs: {
-      abbr: string;
-      degree: string;
-      // ...
-   }[];
-   // ...
-   word: string;
-};
+import remote from './remote';
 
-let abbrsJson = await fetch(abbrRemote) as Abbr[];
+const abbrsJson = await fetch<Abbr[]>(remote);
 
 export const words = abbrsJson.filter(obj => {
+   // Filter only recommended abbrs
    let isRecommended = false;
 
    for (let abbr of obj.abbrs) {
