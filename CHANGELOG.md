@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.0.3
+
 ## [0.0.2](https://github.com/T1xx1/AbbrExt/releases/tag/v0.0.2)
 
 ### Changed
