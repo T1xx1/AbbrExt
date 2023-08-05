@@ -1,8 +1,8 @@
-import { words } from './data';
-import { word as wordDecoration } from './decorations';
+import { words } from './data/data'
+import { word } from './data/decorations';
 
 import decoration from './decoration';
 
 export default () => {
-   decoration(words, wordDecoration);
+   decoration(words, word);
 };

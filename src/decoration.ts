@@ -9,7 +9,7 @@ export default (words: string[], decoration: TextEditorDecorationType) => {
 
    const rngs = [];
 
-   for (let word of words) {
+   for (const word of words) {
       // Exact match 'word'
       let exact = `\\b${word}\\b`;
       // Camel case match 'thisWord'
