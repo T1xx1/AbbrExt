@@ -5,7 +5,7 @@
    "version": "0.0.3",
    "publisher": "T1xx1",
    "repository": "https://github.com/T1xx1/AbbrExt",
-   "main": "./dist/extension.js",
+   "main": "./dist/_index.js",
    "activationEvents": [
       "onStartupFinished"
    ],
