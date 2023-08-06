@@ -22,4 +22,12 @@ export const abbrs = abbrsJson.map(abbr => {
    return abbrs;
 }).reduce((res, subArr) => res.concat(subArr), []);
 
-console.log(abbrs)
+export const notRecommendeds = abbrsJson.map(abbr => {
+   const abbrs: string[] = [];
+
+   for (const a of abbr.abbrs) {
+      if (a.degree === 'red') abbrs.push(a.abbr);
+   }
+
+   return abbrs;
+}).reduce((res, subArr) => res.concat(subArr), []);

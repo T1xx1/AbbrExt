@@ -7,4 +7,7 @@ export const word = window.createTextEditorDecorationType({
 export const abbr = window.createTextEditorDecorationType({
    textDecoration: 'underline dotted #0f0 3px'
 });
+
+export const notRecommended = window.createTextEditorDecorationType({
+   textDecoration: 'underline dotted #f00 3px'
 });
