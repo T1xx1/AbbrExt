@@ -12,17 +12,14 @@ export const words = abbrsJson.filter(abbr => {
    }
 }).map(abbr => abbr.word);
 
-   if (isRecommended) return obj.word;
-}).map(obj => obj.word);
+export const abbrs = abbrsJson.map(abbr => {
+   const abbrs: string[] = [];
 
-/*
-export const abbrs = abbrsJson.filter(obj => {
-   for (let abbrObj of obj.abbrs) {
-      if (abbrObj.degree === 'green') return abbrObj.abbr;
+   for (const a of abbr.abbrs) {
+      if (a.degree === 'green') abbrs.push(a.abbr);
    }
-}).map(obj => {
-   for (let abbrObj of obj.abbrs) {
-      if (abbrObj.degree === 'green') return abbrObj.abbr;
-   }
-});
-*/
+
+   return abbrs;
+}).reduce((res, subArr) => res.concat(subArr), []);
+
+console.log(abbrs)

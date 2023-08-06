@@ -4,6 +4,6 @@ export const word = window.createTextEditorDecorationType({
    textDecoration: 'underline wavy #0000ff'
 });
 
-/* export const abbr = window.createTextEditorDecorationType({
-   textDecoration: 'underline dotted #008000'
-}); */
+export const abbr = window.createTextEditorDecorationType({
+   textDecoration: 'underline dotted #00ff00 3px'
+});
