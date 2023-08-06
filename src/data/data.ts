@@ -6,13 +6,11 @@ import remote from './remote';
 
 const abbrsJson = await fetch<Abbr[]>(remote);
 
-export const words = abbrsJson.filter(obj => {
-   // Filter only recommended abbrs
-   let isRecommended = false;
-
-   for (let abbr of obj.abbrs) {
-      if (abbr.degree === 'green') isRecommended = true;
+export const words = abbrsJson.filter(abbr => {
+   for (const a of abbr.abbrs) {
+      if (a.degree === 'green') return abbr;
    }
+}).map(abbr => abbr.word);
 
    if (isRecommended) return obj.word;
 }).map(obj => obj.word);
