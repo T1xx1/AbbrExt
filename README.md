@@ -2,6 +2,8 @@
 
 Highlight abbrs in your code
 
+> [VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=T1xx1.abbrext)
+
 ## Abbrs src • [Abbreviations in code](https://github.com/abbrcode/abbreviations-in-code)
 
 ## Index
