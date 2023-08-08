@@ -4,10 +4,12 @@
 
 ## [0.0.2](https://github.com/T1xx1/AbbrExt/releases/tag/0.0.2)
 
+### Added
+- Match abbr with camel case notation
+
 ### Changed
-- No match if the abbr is in another one
-- Match abbr using camel case notation
-- Recommended abbrs only
+- No match if abbr is in another one
+- Match recommended abbrs only
 
 ## [0.0.1](https://github.com/T1xx1/AbbrExt/releases/tag/0.0.1)
 
