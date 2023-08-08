@@ -1,8 +1,8 @@
 # AbbrExt
 
-Highlight abbreviations in your code
+Highlight abbrs in your code
 
-> ## [Abbr src](https://github.com/abbrcode/abbreviations-in-code)
+## Abbrs src • [Abbreviations in code](https://github.com/abbrcode/abbreviations-in-code)
 
 ## Index
 - [Changelog](https://github.com/T1xx1/AbbrExt/blob/main/CHANGELOG.md)
@@ -15,4 +15,4 @@ Highlight abbreviations in your code
 ## Features
 
 - Underline words that can be abbreviated
-- Match with camel case notation
+- Match abbrs using camel case notation
