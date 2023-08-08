@@ -16,5 +16,7 @@ Highlight abbrs in your code
 
 ## Features
 
-- Underline words that can be abbreviated
+- Underline possible abbrs
+- Underline abbrs
+- Underline not recommended
 - Match abbrs using camel case notation
