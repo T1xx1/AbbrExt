@@ -16,7 +16,7 @@ const extensionConfig = {
    output: {
       // the bundle is stored in the 'dist' folder (check package.json), 📖 -> https://webpack.js.org/configuration/output/
       path: path.resolve(__dirname, 'dist'),
-      filename: '_index.js',
+      filename: 'extension.js',
       libraryTarget: 'commonjs2'
    },
    externals: {
