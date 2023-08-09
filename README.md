@@ -1,7 +1,5 @@
 # AbbrExt
 
-<img src='https://raw.githubusercontent.com/t1xx1/abbrext/main/imgs/icon.png' />
-
 Highlight abbrs in your code
 
 > [VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=T1xx1.abbrext)
@@ -21,3 +19,5 @@ Highlight abbrs in your code
 - Underline abbrs
 - Underline not recommended
 - Match abbrs using camel case notation
+
+<img src='https://raw.githubusercontent.com/T1xx1/AbbrExt/main/imgs/icon.png' alt='Icon' height='100px' />
