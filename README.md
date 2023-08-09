@@ -12,7 +12,7 @@ Highlight abbrs in your code
 
 <br />
 
-![](https://raw.githubusercontent.com/T1xx1/AbbrExt/main/img/matches.png)
+![](https://raw.githubusercontent.com/t1xx1/abbrext/main/imgs/matches.png)
 
 ## Features
 
