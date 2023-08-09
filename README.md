@@ -15,7 +15,6 @@ Highlight abbrs in your code
 ![](https://raw.githubusercontent.com/t1xx1/abbrext/main/imgs/matches.png)
 
 ## Features
-
 - Underline possible abbrs
 - Underline abbrs
 - Underline not recommended
