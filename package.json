@@ -3,6 +3,8 @@
    "displayName": "AbbrExt",
    "description": "Highlight abbreviations in your code",
    "version": "0.0.3",
+   "icon": "imgs/icon.png",
+
    "publisher": "T1xx1",
    "repository": "https://github.com/T1xx1/AbbrExt",
 
