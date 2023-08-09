@@ -5,10 +5,12 @@
    "version": "0.0.3",
    "publisher": "T1xx1",
    "repository": "https://github.com/T1xx1/AbbrExt",
+
    "main": "./dist/extension.js",
    "activationEvents": [
       "onStartupFinished"
    ],
+   
    "engines": {
       "vscode": "^1.78.0"
    },
