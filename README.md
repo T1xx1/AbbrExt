@@ -8,6 +8,7 @@ Highlight abbrs in your code
 
 ## Index
 - [Changelog](https://github.com/T1xx1/AbbrExt/blob/main/CHANGELOG.md)
+- [License](https://github.com/T1xx1/AbbrExt/blob/main/LICENSE)
 - [Features](#features)
 
 <br />
